@@ -1,0 +1,175 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.invoiceTracker {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  width: 100%;
+  height: auto;         /* let content grow, or use min-height if needed */
+  min-height: 100vh;    /* fill the viewport */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top header */
+.header {
+  background-color: #4f2684; /* Purple background */
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+  
+  .logo {
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .topTitle h1 {
+    margin: 0;
+    font-size: 1.6rem;
+  }
+}
+
+/* Main Body: Left Nav + Right Content */
+.mainBody {
+  display: flex;
+  min-height: 600px; /* Adjust if needed */
+}
+
+/* Left Navigation */
+.leftNav {
+  width: 200px;
+  background-color: #f3f3f3;
+  padding: 15px;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    padding: 10px 0;
+    cursor: pointer;
+  }
+
+  .active {
+    font-weight: bold;
+    color: #4f2684;
+  }
+}
+
+/* Right Content Area */
+.contentArea {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Purple Title Bar for 'Estimations' */
+.estimationTitleBar {
+  background-color: #4f2684;
+  color: #fff;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+
+  h2 {
+    margin: 0;
+    font-size: 1.4rem;
+  }
+}
+
+/* White Panel for Form */
+.estimationFormPanel {
+  background-color: #fff;
+  padding: 20px;
+  margin: 0 15px; 
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  
+  .formHeading {
+    margin-top: 0;
+    color: #4f2684;
+    margin-bottom: 20px;
+  }
+}
+
+/* Radio Group */
+.radioGroup {
+  margin-bottom: 20px;
+  label {
+    margin-right: 20px;
+  }
+}
+
+/* Form Rows */
+.formRow {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  
+  .formField {
+    flex: 1;
+    min-width: 200px;
+    margin-right: 20px;
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 6px;
+      box-sizing: border-box;
+    }
+  }
+
+  .formFieldFull {
+    flex: 1 1 100%;
+    margin-right: 20px;
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    textarea,
+    input {
+      width: 100%;
+    }
+  }
+}
+
+/* Buttons */
+.buttonRow {
+  margin-top: 20px;
+  
+  button {
+    padding: 8px 16px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 3px;
+  }
+
+  .saveBtn {
+    background-color: #6c757d; /* Gray-ish */
+  }
+
+  .submitBtn {
+    background-color: #28a745; /* Green */
+  }
+
+  .cancelBtn {
+    background-color: #dc3545; /* Red */
+  }
+}
